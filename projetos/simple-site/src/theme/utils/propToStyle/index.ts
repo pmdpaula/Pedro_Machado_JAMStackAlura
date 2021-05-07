@@ -1,7 +1,9 @@
 /* eslint-disable indent */
 import breakpointsMedia from '../breakpointsMedia';
 
-const propToStyle = propName => props => {
+const propToStyle = (propName: string | number) => (props: {
+  [x: string]: any;
+}) => {
   const propValue = props[propName];
 
   if (typeof propValue === 'string' || typeof propValue === 'number') {

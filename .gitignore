@@ -119,7 +119,7 @@ dist
 # projetos/modulo-comum
 # projetos/portifolio
 # projetos/instalura
-projetos/sbui
+# projetos/sbui
 # projetos/simple-site
 
 projetos/portifolio/.env.local

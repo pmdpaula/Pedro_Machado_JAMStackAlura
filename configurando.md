@@ -99,3 +99,9 @@ Ajustar o package.json
 /projetos/sbui> rm yarn.lock
 
 /> yarn workspace @pmdpaula/sbui add next-compose-plugins next-compose-plugins
+
+#### Para a Vercel ler os monorepos individualmente o build deverá ser escrito no diretório build da raiz do projeto
+No package.json do projeto do Storybook, parte de script:build colocar a saída para o diretório build
+"build": "build-storybook -s public -o build"
+
+
