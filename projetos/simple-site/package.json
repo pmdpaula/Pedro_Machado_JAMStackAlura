@@ -1,0 +1,46 @@
+{
+  "name": "@pmdpaula/simple",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@pmdpaula/modulo-comum": "*",
+    "@pmdpaula/sbui": "*",
+    "lodash": "^4.17.21",
+    "next": "latest",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^7.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-is": "17.0.2",
+    "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "15.0.0",
+    "@types/react": "17.0.4",
+    "@types/react-dom": "17.0.3",
+    "@types/styled-components": "^5.1.9",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "typescript": "4.2.4"
+  },
+  "license": "MIT"
+}
