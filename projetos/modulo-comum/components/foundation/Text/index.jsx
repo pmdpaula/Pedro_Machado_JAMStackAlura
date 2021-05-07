@@ -51,14 +51,7 @@ const TextBase = styled.span`
   ${propToStyle('margin')}
 `;
 
-export default function Text({
-  tag,
-  variant,
-  children,
-  href,
-  cmsKey,
-  ...props
-}) {
+export function Text({ tag, variant, children, href, cmsKey, ...props }) {
   const websitePageContext = useContext(WebsitePageContext);
 
   const componentContent = cmsKey

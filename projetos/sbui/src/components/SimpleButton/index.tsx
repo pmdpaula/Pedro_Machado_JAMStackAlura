@@ -1,8 +1,11 @@
 /* eslint-disable import/prefer-default-export */
+import { ReactNode } from 'react';
 import styled from 'styled-components';
 
 interface SimpleButtonProps {
-  bgColor: string;
+  bgColor?: string;
+  bgHColor?: string;
+  children: ReactNode;
 }
 
 const SimpleButtonWrapper = styled.button<SimpleButtonProps>`
@@ -11,13 +14,19 @@ const SimpleButtonWrapper = styled.button<SimpleButtonProps>`
   background: ${props => props.bgColor};
 
   &:hover {
-    background: gray;
+    background: ${props => props.bgHColor};
   }
 `;
 
 // const SimpleButton = ({ children }) => (
 //   <SimpleButtonWrapper>{children}</SimpleButtonWrapper>
 // );
-export const SimpleButton = ({ bgColor }: SimpleButtonProps) => (
-  <SimpleButtonWrapper bgColor={bgColor}>Botão simples</SimpleButtonWrapper>
+export const SimpleButton = ({
+  bgColor = '#09f',
+  bgHColor = '#07f',
+  children,
+}: SimpleButtonProps) => (
+  <SimpleButtonWrapper bgColor={bgColor} bgHColor={bgHColor}>
+    {children}
+  </SimpleButtonWrapper>
 );

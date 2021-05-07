@@ -50,6 +50,7 @@ module.exports = {
 
     // We will use TypeScript's types for component props instead
     'react/prop-types': 'off',
+    'react/require-default-props': 'off',
 
     // 'import/prefer-default-export': 'off',
 
