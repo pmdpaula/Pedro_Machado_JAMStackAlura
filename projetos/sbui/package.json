@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "build-storybook -s public"
+    "build": "build-storybook -s public -o build"
   },
   "peerDependencies": {
     "react": "17.0.2",
