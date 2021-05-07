@@ -117,7 +117,7 @@ dist
 .pnp.*
 
 # projetos/modulo-comum
-projetos/portifolio
+# projetos/portifolio
 projetos/instalura
 projetos/sbui
 projetos/simple-site
