@@ -1,0 +1,29 @@
+/* eslint-disable no-undef */
+// import { PropTypes } from 'prop-types';
+import { css } from 'styled-components';
+
+import { breakpoints } from '../index';
+
+// interface breakpointsMediaProps {
+//   cssByBreakpoint: string | number | [{"xs": FlattenSimpleInterpolation}, {"sm": FlattenSimpleInterpolation}];
+// }
+
+const breakpointsMedia = cssByBreakpoint => {
+  const breakpointNames = Object.keys(breakpoints);
+
+  return breakpointNames
+    .filter(breakpointName => Boolean(cssByBreakpoint[breakpointName]))
+    .map(
+      breakpointName => css`
+        @media only screen and (min-width: ${breakpoints[breakpointName]}px) {
+          ${cssByBreakpoint[breakpointName]}
+        }
+      `,
+    );
+};
+
+export default breakpointsMedia;
+
+// breakpointsMedia.propTypes = {
+//   cssByBreakpoint: PropTypes.string.isRequired,
+// };

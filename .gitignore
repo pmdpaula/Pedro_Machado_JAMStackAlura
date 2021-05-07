@@ -116,7 +116,11 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-projetos
+# projetos/modulo-comum
+projetos/portifolio
+projetos/instalura
+projetos/sbui
+projetos/simple-site
 
 projetos/portifolio/.env.local
 projetos/*/.env.local
