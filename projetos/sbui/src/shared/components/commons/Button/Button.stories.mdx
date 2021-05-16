@@ -1,0 +1,33 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
+import Button from './index';
+
+<Meta title="Components/Commons/Botões/ButtonBase" component={Button} />
+
+# Botão Base
+Botão base
+
+## Botão Base 1
+
+<ArgsTable />
+
+<Canvas>
+  <Story
+    name="Botão base"
+    args={{ children: 'Botão base', href: '', variant: 'primary.main' }}
+  >
+    {(args) => <Button {...args}/>}
+  </Story>
+</Canvas>
+
+
+<!-- ## Botão desabilitado
+
+<Canvas>
+  <Story
+    name="Botão base desabilitado"
+    args={{href: "", children: 'Botão base desabilitado'}}
+  >
+    {(args) => <Button {...args}/>}
+  </Story>
+</Canvas> -->
+

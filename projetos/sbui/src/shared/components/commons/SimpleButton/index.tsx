@@ -9,7 +9,7 @@ interface SimpleButtonProps {
 }
 
 const SimpleButtonWrapper = styled.button<SimpleButtonProps>`
-  border: 0.2rem solid black;
+  border: 0.1rem solid black;
   padding: 0.5rem;
   background: ${props => props.bgColor};
 
