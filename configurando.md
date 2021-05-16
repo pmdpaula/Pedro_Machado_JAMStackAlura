@@ -105,3 +105,6 @@ No package.json do projeto do Storybook, parte de script:build colocar a saída 
 "build": "build-storybook -s public -o build"
 
 
+## Configuração do lint automático e CI
+
+/> npx husky install

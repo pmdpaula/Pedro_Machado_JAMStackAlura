@@ -1,0 +1,6 @@
+{
+  "packages": ["projetos/sbui/**", "projetos/modulo-comum/**"],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}
