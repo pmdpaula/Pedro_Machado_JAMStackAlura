@@ -3,21 +3,19 @@ import get from 'lodash/get';
 import NextLink from 'next/link';
 // import PropTypes from 'prop-types';
 import { ReactNode } from 'react';
-import styled, { css } from 'styled-components';
-import { Url } from 'url';
+import styled from 'styled-components';
 
-import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
-// eslint-disable-next-line import/no-cycle
-import { TextStyleVariantsMap } from '../../foundation/Text';
+// import { Url } from 'url';
 
 export interface LinkProps {
-  href: Url;
+  href: string;
   color: string | undefined;
   children: ReactNode;
 }
 
 /* color: inherit; */
 const StyledLink = styled.a`
+  font-family: ${({ theme }) => theme.fontFamily};
   ${({ theme, color }) =>
     color
       ? `color: ${get(theme, `colors.${color}.color`)}`
@@ -25,17 +23,6 @@ const StyledLink = styled.a`
   text-decoration: none;
   opacity: 1;
   transition: opacity ${({ theme }) => theme.transition};
-  ${TextStyleVariantsMap.smallestException}
-  ${breakpointsMedia({
-    xs: css`
-      /* All devices */
-      ${TextStyleVariantsMap.smallestException}
-    `,
-    md: css`
-      /* From md breakpoint */
-      ${TextStyleVariantsMap.paragraph1}
-    `,
-  })}
 
   /* transition: opacity 2000ms ease-in-out; */
   &:hover,

@@ -66,7 +66,7 @@ export default {
   colors,
   typographyVariants,
   breakpoints,
-  borderRadius: '12px',
+  borderRadius: '8px',
   transition: '200ms ease-in-out',
   fontFamily: "'Rubik', sans-serif",
 } as const;

@@ -6,6 +6,7 @@ import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 import { propToStyle } from '../../../theme/utils/propToStyle';
 import { WebsitePageContext } from '../../../utils/context';
+// eslint-disable-next-line import/no-cycle
 import Link from '../../commons/Link';
 
 // interface TextProps {
