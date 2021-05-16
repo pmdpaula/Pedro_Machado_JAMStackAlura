@@ -1,6 +1,6 @@
 import get from 'lodash/get';
 import PropTypes from 'prop-types';
-import React from 'react';
+import { useContext } from 'react';
 import styled, { css } from 'styled-components';
 
 import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
@@ -59,7 +59,7 @@ export default function Text({
   cmsKey,
   ...props
 }) {
-  const websitePageContext = React.useContext(WebsitePageContext);
+  const websitePageContext = useContext(WebsitePageContext);
 
   const componentContent = cmsKey
     ? websitePageContext.getCMSContent(cmsKey)
